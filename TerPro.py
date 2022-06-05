@@ -121,7 +121,6 @@ while i != len(lex):
                 variables[lex[i][0]] = eval(str(variables[lex[i][0]]), variables.copy())
             else:
                 j = 0
-                print(lex[i])
                 while True:
                     if lex[i][2][j] == 'i':
                         j += 1
@@ -298,7 +297,6 @@ while i != len(lex):
                                     k += 1
                                 else:
                                     k = 0
-                                    print(lex[i])
                                     while True:
                                         if lex[i][2][k] == 'i':
                                             k += 1
