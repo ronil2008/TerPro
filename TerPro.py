@@ -17,8 +17,8 @@ def remove_str(lst):
                 nlst.append(lst[i])
     return nlst
 
-
-code: str = open('main.TP', 'r').read()
+#21:you opening file that has TP format
+code: str = open('filename.TP', 'r').read()
 lex = re.findall(
     r'(:)?(\w*)\s?(=)\s?(.*)|(:)?(print)\s?(.*)|(:)?(\w*)\s?(=)\s?(input)\s?(.*)|(:)?(if)\s?(.*)|(:)?(else)|(:)?(\w*)\s?(\+=|-=|\*=|/=)\s?(.*)|(while)\s?(.*)',
     code)
